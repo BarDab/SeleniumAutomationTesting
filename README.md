@@ -1,2 +1,2 @@
 # SeleniumAutomationTesting
-Projects made during Learn Java Automation Testing with Selenium
+Projects made during the course Learn Java Automation Testing with Selenium.
