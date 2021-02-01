@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-01T10:07:48Z" name="Default suite" finished-at="2021-02-01T10:08:28Z" duration-ms="40101">
+    <groups>
+    </groups>
+    <test started-at="2021-02-01T10:07:48Z" name="Default test" finished-at="2021-02-01T10:08:28Z" duration-ms="40101">
+      <class name="com.bardab.SeleniumHubTest">
+        <test-method signature="inChrome()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:07:48Z" name="inChrome" finished-at="2021-02-01T11:07:57Z" duration-ms="8566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inChrome -->
+        <test-method signature="inChrome()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:07:48Z" name="inChrome" finished-at="2021-02-01T11:07:56Z" duration-ms="8426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inChrome -->
+        <test-method signature="inChrome()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:07:56Z" name="inChrome" finished-at="2021-02-01T11:08:03Z" duration-ms="6993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inChrome -->
+        <test-method signature="inChrome()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:07:57Z" name="inChrome" finished-at="2021-02-01T11:08:04Z" duration-ms="7678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inChrome -->
+        <test-method signature="inFirefox()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:08:04Z" name="inFirefox" finished-at="2021-02-01T11:08:16Z" duration-ms="11975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inFirefox -->
+        <test-method signature="inFirefox()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:08:04Z" name="inFirefox" finished-at="2021-02-01T11:08:17Z" duration-ms="12268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inFirefox -->
+        <test-method signature="inFirefox()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:08:16Z" name="inFirefox" finished-at="2021-02-01T11:08:27Z" duration-ms="10931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inFirefox -->
+        <test-method signature="inFirefox()[pri:0, instance:com.bardab.SeleniumHubTest@22ef9844]" started-at="2021-02-01T11:08:17Z" name="inFirefox" finished-at="2021-02-01T11:08:28Z" duration-ms="11519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inFirefox -->
+      </class> <!-- com.bardab.SeleniumHubTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
