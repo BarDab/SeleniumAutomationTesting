@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-22T08:59:17Z" name="First Suite" finished-at="2021-01-22T08:59:29Z" duration-ms="11859">
+    <groups>
+    </groups>
+    <test started-at="2021-01-22T08:59:17Z" name="ChromeTest" finished-at="2021-01-22T08:59:23Z" duration-ms="5935">
+      <class name="com.bardab.crossbrowserframework.CrossBrowserTest">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@55a561cf]" started-at="2021-01-22T09:59:17Z" name="before" finished-at="2021-01-22T09:59:21Z" duration-ms="4644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="pageTest()[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@55a561cf]" started-at="2021-01-22T09:59:21Z" name="pageTest" finished-at="2021-01-22T09:59:22Z" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTest -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@55a561cf]" started-at="2021-01-22T09:59:22Z" name="after" finished-at="2021-01-22T09:59:23Z" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.bardab.crossbrowserframework.CrossBrowserTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2021-01-22T08:59:23Z" name="FirefoxTest" finished-at="2021-01-22T08:59:29Z" duration-ms="5888">
+      <class name="com.bardab.crossbrowserframework.CrossBrowserTest">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@a4102b8]" started-at="2021-01-22T09:59:23Z" name="before" finished-at="2021-01-22T09:59:27Z" duration-ms="3863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="pageTest()[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@a4102b8]" started-at="2021-01-22T09:59:27Z" name="pageTest" finished-at="2021-01-22T09:59:27Z" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageTest -->
+        <test-method is-config="true" signature="after()[pri:0, instance:com.bardab.crossbrowserframework.CrossBrowserTest@a4102b8]" started-at="2021-01-22T09:59:27Z" name="after" finished-at="2021-01-22T09:59:29Z" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.bardab.crossbrowserframework.CrossBrowserTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- First Suite -->
+</testng-results>
