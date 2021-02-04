@@ -2,8 +2,14 @@ package com.bardab;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -45,7 +51,7 @@ public class LoginPageTest {
 	
 	
 	@Test(dataProvider="user-ids-passwords-data-provider-xlsx")
-	public void loginTest(String id, String password, String nameOrAlertText, String results) throws InterruptedException {
+	public void loginTest(String id, String password, String nameOrAlertText, String results) throws InterruptedException, IOException {
 		boolean result = Boolean.valueOf(results);
 		driver.get(url);
 		loginPage.enterUserId(id);
@@ -55,6 +61,8 @@ public class LoginPageTest {
 	
 		if(result) { 
 			explicitWait.until(ExpectedConditions.titleContains("Guru99 Bank Manager HomePage"));
+			File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(screenShot, new File( "target\\"+"screenShot.png"));
 			assertEquals(this.driver.findElement(By.cssSelector("#site-name > a:nth-child(1)")).getText(),nameOrAlertText);
 			assertEquals(this.driver.findElement(By.cssSelector("tr.heading3 > td:nth-child(1)")).getText(),"Manger Id : "+id);
 			
