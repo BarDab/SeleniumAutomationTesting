@@ -60,6 +60,28 @@
      <scope>test</scope>
 </dependency>
 
+<dependency>
+    <groupId>com.typesafe.play</groupId>
+    <artifactId>play-mailer_2.13</artifactId>
+    <version>8.0.1</version>
+</dependency>
+
+<dependency>
+    <groupId>com.typesafe</groupId>
+    <artifactId>config</artifactId>
+    <version>1.4.1</version>
+</dependency>
+
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itextpdf</artifactId>
+			<version>5.0.6</version>
+		</dependency>
+<dependency>
+  <groupId>com.itextpdf.tool</groupId>
+  <artifactId>xmlworker</artifactId>
+  <version>5.5.13</version>
+</dependency>
 
   </dependencies>
   
