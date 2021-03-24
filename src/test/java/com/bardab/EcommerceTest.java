@@ -1,17 +1,9 @@
 package com.bardab;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
-import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.bardab.pageobjectmodel.*;
 import com.bardab.utilites.ExcelReadUtil;
-import com.bardab.utilites.Utility;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -76,13 +68,13 @@ public class EcommerceTest {
 	@DataProvider(name="user-ids-passwords-data-provider-xlsx")
 	public String[][] Logins() {
 		
-		return ExcelReadUtil.readExcelInto2DArray("src\\\\test\\\\resources\\\\accounts.xlsx", "accounts", 5);
+		 return  ExcelReadUtil.readFromExcelSheetWithoutFirstRow("src\\\\test\\\\resources\\\\accounts.xlsx", "accounts", 5);
 	}
 	
 	@DataProvider(name="user-shipping-information-data-provider-xlsx")
 	public String[][] ShippingInformation() {
 		
-		return ExcelReadUtil.readExcelInto2DArray("src\\\\test\\\\resources\\\\accounts.xlsx", "shippingInformation", 6);
+		return ExcelReadUtil.readFromExcelSheetWithoutFirstRow("src\\\\test\\\\resources\\\\accounts.xlsx", "shippingInformation", 6);
 	}
 	
 	
