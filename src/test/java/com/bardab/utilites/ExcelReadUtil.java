@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import java.util.Arrays;
-;
+
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
@@ -57,7 +57,7 @@ public class ExcelReadUtil {
 	  
 	  private static Workbook createWorkBookFromExcelFile(String excelFilePath) {
 			try {
-				return WorkbookFactory.create(createOPCPackage(createFile(excelFilePath)));
+				return WorkbookFactory.create(createOPCPackageFromFile(getFile(excelFilePath)));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -65,7 +65,7 @@ public class ExcelReadUtil {
 		}
 
 	
-	private static OPCPackage createOPCPackage(File file) {
+	private static OPCPackage createOPCPackageFromFile(File file) {
 		try {
 			return OPCPackage.open(file.getAbsolutePath());
 		} catch (InvalidFormatException e) {
@@ -74,7 +74,7 @@ public class ExcelReadUtil {
 		return null;
 	}
 
-	private static File createFile(String excelFilePath) {
+	private static File getFile(String excelFilePath) {
 		return new File(excelFilePath);
 	}
 	
